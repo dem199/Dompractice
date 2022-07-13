@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link href="styles.css" rel="stylesheet" />
+    <script src="app.js"></script>
+    <title>Optimistic Tutorial</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <div id="page-banner">
+          <h1 class="title">Optimistic Tutorial</h1>
+          <p>Textbooks to prepare you for your exams</p>
+          <form id="search-books">
+            <input type="text" placeholder="Search books..." />
+          </form>
+        </div>
+      </header>
+      <div id="book-list">
+        <h2 class="title">Books to Read</h2>
+        <ul>
+          <li>
+            <span class="name">Lamlard Physics</span>
+            <span class="delete">delete</span>
+          </li>
+          <li>
+            <span class="name">Integrated Mathematics</span>
+            <span class="delete">delete</span>
+          </li>
+          <li>
+            <span class="name">New School Chemistry</span>
+            <span class="delete">delete</span>
+          </li>
+          <li>
+            <span class="name">Invisible Teacher</span>
+            <span class="delete">delete</span>
+          </li>
+        </ul>
+      </div>
+      <form id="add-book">
+        <input type="checkbox" id="hide" />
+        <label for="hide">Hide all books</label>
+        <input type="text" placeholder="Add a book..." />
+        <button>Add</button>
+      </form>
+      <div id="tabbed-content">
+        <ul class="tabs">
+          <li data-target="#about" class="active">About</li>
+          <li data-target="#contact">Contact</li>
+        </ul>
+        <div class="panel active" id="about">
+          <p>About Us</p>
+          <p>
+            We have the experience and the exposure you will need to pass your
+            examinations. We will hold you by the hand and walk you through it.
+          </p>
+        </div>
+        <div class="panel" id="contact">
+          <p>Our address below</p>
+          <p>16, Rasaq Abass Street off faleye Road, Akute, Ogun State.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
